@@ -3,8 +3,6 @@ import { jsx } from "theme-ui"
 import { preToCodeBlock } from "mdx-utils"
 import PrismCodeBlock from "@theme-ui/prism"
 
-import headings from "../components/headings"
-
 const CodeBlock = preProps => {
   const props = preToCodeBlock(preProps)
 
@@ -23,5 +21,4 @@ const CodeBlock = preProps => {
 
 export default {
   pre: CodeBlock,
-  ...headings,
 }
